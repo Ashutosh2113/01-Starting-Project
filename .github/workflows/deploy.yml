@@ -4,14 +4,14 @@ on:
     branches:
       - master
 env:
-  MONGO_DB_NAME: 'Cluster0'
+  MONGODB_DB_NAME: 'Cluster0'
 jobs:
   test:
     environment: testing
     env:
-      MONGO_DB_CLUSTER_ADD: cluster0.2vnhdfv.mongodb.net
-      MONGO_DB_USER: ashutosh
-      MONGO_DB_PASSWORD: sQQU0u1gVnoA4sh7
+      MONGODB_CLUSTER_ADDRESS: cluster0.2vnhdfv.mongodb.net
+      MONGODB_USERNAME: ashutosh
+      MONGODB_PASSWORD: sQQU0u1gVnoA4sh7
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
